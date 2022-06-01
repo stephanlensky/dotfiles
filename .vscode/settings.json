@@ -1,5 +1,6 @@
 {
     "security.workspace.trust.enabled": false,
+    "git.ignoreMissingGitWarning": true,
     "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "none",
@@ -61,5 +62,7 @@
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "workbench.editor.untitled.hint": "hidden"
 }
