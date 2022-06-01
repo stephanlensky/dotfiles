@@ -13,9 +13,6 @@
         "**/.settings": true,
         "**/.pytest_cache": true
     },
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.pycodestyleEnabled": false,
     "multiCommand.commands": [
         {
             "command": "multiCommand.saveFileAndFormatWhenPython",
@@ -31,21 +28,22 @@
         "--settings-path",
         "${workspaceFolder}",
     ],
+    "editor.rulers": [
+        80,
+        100
+    ],
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "python.linting.pylintArgs": [
-        "--rcfile=${workspaceFolder}/pyproject.toml"
-    ],
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--experimental-string-processing"
     ],
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "python.linting.mypyArgs": [
-        "--config-file=${workspaceFolder}/pyproject.toml"
-    ],
-    "python.linting.pylintCategorySeverity.refactor": "Warning",
+    "python.sortImports.path": "isort",
+    "python.testing.pytestEnabled": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "[dockercompose]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
