@@ -1,0 +1,67 @@
+{
+    "security.workspace.trust.enabled": false,
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none",
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.mypy_cache": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.pytest_cache": true
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.saveFileAndFormatWhenPython",
+            "sequence": [
+                "editor.action.format",
+                "python.sortImports",
+                // { "command": "workbench.action.tasks.runTask", "args": "docformatter: current file" },
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "python.sortImports.args": [
+        "--settings-path",
+        "${workspaceFolder}",
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "python.linting.pylintArgs": [
+        "--rcfile=${workspaceFolder}/pyproject.toml"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--experimental-string-processing"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file=${workspaceFolder}/pyproject.toml"
+    ],
+    "python.linting.pylintCategorySeverity.refactor": "Warning",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.eol": "\n",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "python.languageServer": "Pylance",
+    "remote.SSH.remotePlatform": {
+        "cardinal": "linux"
+    },
+    "remote.autoForwardPorts": false,
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    },
+    "redhat.telemetry.enabled": false
+}

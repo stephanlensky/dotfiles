@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "command": "multiCommand.saveFileAndFormatWhenPython",
+        "key": "ctrl+s",
+        "when": "resourceLangId == 'python'"
+    },
+    {
+        "command": "workbench.action.files.save",
+        "key": "ctrl+shift+s",
+        "when": "resourceLangId == 'python'"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "-revealFileInOS",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    }
+]
