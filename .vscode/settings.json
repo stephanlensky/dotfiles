@@ -55,9 +55,6 @@
     },
     "terminal.integrated.inheritEnv": false,
     "python.languageServer": "Pylance",
-    "remote.SSH.remotePlatform": {
-        "cardinal": "linux"
-    },
     "remote.autoForwardPorts": false,
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
